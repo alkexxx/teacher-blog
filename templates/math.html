@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Математика{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <a href="{{ url_for('materials_page') }}"
+       class="btn btn-outline-secondary mb-4">
+
+        ← Назад
+
+    </a>
+
+    <h1 class="text-center mb-5">
+        📐 Математика
+    </h1>
+
+    <div class="row justify-content-center">
+
+    <div class="col-md-4">
+
+        {% for grade in range(5, 12) %}
+
+        <a href="{{ url_for('class_page', subject='math', grade=grade) }}"
+           class="btn btn-primary w-100 mb-3 py-3">
+
+            {{ grade }} класс
+
+        </a>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}

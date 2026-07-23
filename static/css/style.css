@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#f7f9fc;
+
+    font-family:Segoe UI, sans-serif;
+
+}
+
+.hero{
+
+    padding:100px 0;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+}
+
+.subtitle{
+
+    font-size:28px;
+
+    color:#2563eb;
+
+    margin:20px 0;
+
+}
+
+.description{
+
+    font-size:20px;
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+.hero-image{
+    max-width:420px;
+    width:100%;
+    margin-top:40px;
+}
+
+.categories{
+
+    padding:80px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    font-size:40px;
+
+}
+
+.card{
+
+    padding:35px;
+
+    border:none;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    font-size:50px;
+
+}
+
+.card h4{
+
+    margin:20px 0;
+
+}
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#888;
+
+}
+.nav-link{
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-link.active{
+
+    color:#2563eb !important;
+
+    font-weight:700;
+
+}
+
+.nav-link:hover{
+
+    color:#2563eb !important;
+
+}
+.stats{
+
+    background:white;
+
+    padding:70px 0;
+
+}
+
+.stats h2{
+
+    color:#2563eb;
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.stats p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+.coming-soon{
+    max-width:700px;
+    margin:50px auto;
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.coming-soon h1{
+    color:#1e88e5;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    font-size:20px;
+    color:#555;
+}
+
+.text{
+    font-size:18px;
+    margin:20px 0;
+}
+
+.list{
+    text-align:left;
+    display:inline-block;
+    margin:20px auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.meme{
+    width:320px;
+    max-width:100%;
+    border-radius:15px;
+    margin:25px 0;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:12px 28px;
+    background:#1e88e5;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1565c0;
+}
+
+@media (max-width: 768px){
+
+    .card h3{
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+}

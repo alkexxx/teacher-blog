@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ grade }} класс
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <a href="{% if subject == 'math' %}
+                {{ url_for('math_page') }}
+             {% else %}
+                {{ url_for('informatics_page') }}
+             {% endif %}"
+       class="btn btn-outline-secondary mb-4">
+
+        ← Назад
+
+    </a>
+
+    <div class="card shadow p-5 text-center">
+
+        <h1>
+
+            {% if subject == "math" %}
+                📐 Математика
+            {% else %}
+                💻 Информатика
+            {% endif %}
+
+        </h1>
+
+        <h2 class="mt-3">
+
+            {{ grade }} класс
+
+        </h2>
+
+        <hr>
+
+        <p class="lead">
+    {{ description }}
+</p>
+
+        {% if link == "#" %}
+<a href="{{ url_for('coming_soon') }}" class="button">
+    📂 Открыть материалы
+</a>
+{% else %}
+<a href="{{ link }}" target="_blank" class="button">
+    📂 Открыть материалы
+</a>
+{% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

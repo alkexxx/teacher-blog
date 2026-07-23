@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Обо мне{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="mb-4">Обо мне</h1>
+
+    <div class="row">
+
+        <div class="col-lg-4 text-center">
+
+            <img src="{{ url_for('static', filename='images/teacher.png') }}"
+                 class="img-fluid rounded shadow">
+
+        </div>
+
+        <div class="col-lg-8">
+
+            <h3>Александр Кошелапов</h3>
+
+            <p class="lead">
+                Учитель математики и информатики.
+            </p>
+
+            <p>
+                Добро пожаловать на мой педагогический сайт!
+                Здесь я публикую собственные методические разработки,
+                презентации, рабочие листы, материалы для подготовки к урокам
+                и полезные ресурсы для учащихся и педагогов.
+            </p>
+
+            <p>
+                Моя цель — сделать обучение современным,
+                понятным и интересным.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

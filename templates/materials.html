@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Методическая копилка{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="mb-5 text-center">
+        📚 Методическая копилка
+    </h1>
+
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body text-center">
+
+                    <h2>📐</h2>
+
+                    <h3>Математика</h3>
+
+                    <p>
+                        Материалы для 5–11 классов
+                    </p>
+
+                    <a href="{{ url_for('math_page') }}"
+                       class="btn btn-primary">
+
+                        Перейти
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-5">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body text-center">
+
+                    <h2>💻</h2>
+
+                    <h3>Информатика</h3>
+
+                    <p>
+                        Материалы для 6–11 классов
+                    </p>
+
+                    <a href="{{ url_for('informatics_page') }}"
+                       class="btn btn-success">
+
+                        Перейти
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

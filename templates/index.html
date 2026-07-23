@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1>
+
+                    Александр Кошелапов
+
+                </h1>
+
+                <p class="subtitle">
+
+                    Учитель математики и информатики
+
+                </p>
+
+                <p class="description">
+
+    Современные методические материалы по математике и информатике:
+    конспекты уроков, презентации, рабочие листы, практические задания
+    и полезные ресурсы для учителей и учащихся.
+
+</p>
+
+                <a href="#" class="btn btn-primary btn-lg">
+
+                    Методическая копилка
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img src="{{ url_for('static', filename='images/teacher.png') }}"
+                     class="hero-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="stats">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <h2>100+</h2>
+
+                <p>Методических материалов</p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>500+</h2>
+
+                <p>Скачиваний</p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>3</h2>
+
+                <p>Основных направления</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="categories">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Основные разделы
+
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <h3>📐</h3>
+
+                    <h4>Математика</h4>
+
+                    <p>Конспекты, задания и разработки.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <h3>💻</h3>
+
+                    <h4>Информатика</h4>
+
+                    <p>Программирование и цифровые технологии.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <h3>📊</h3>
+
+                    <h4>Презентации</h4>
+
+                    <p>Материалы для уроков.</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <h3>🎥</h3>
+
+                    <h4>Видеоуроки</h4>
+
+                    <p>Полезные обучающие видео.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

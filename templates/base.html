@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta name="description" content="Персональный сайт учителя математики и информатики. Методические материалы, разработки уроков, презентации и полезные ресурсы.">
+
+<meta name="keywords" content="учитель, математика, информатика, разработки уроков, презентации, методическая копилка">
+
+<meta name="author" content="Твоё имя">
+    <link rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Педагогический блог{% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold text-primary fs-3" href="/">
+            Педагогический блог
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end"
+             id="navbar">
+
+          <ul class="navbar-nav">
+
+    <li class="nav-item">
+        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %}"
+           href="{{ url_for('index') }}">
+            Главная
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link {% if request.endpoint == 'materials' %}active{% endif %}"
+           href="{{ url_for('materials_page') }}">
+            Методическая копилка
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link {% if request.endpoint == 'about' %}active{% endif %}"
+           href="{{ url_for('about') }}">
+            Обо мне
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}"
+           href="{{ url_for('contact') }}">
+            Контакты
+        </a>
+    </li>
+
+</ul>
+        </div>
+
+    </div>
+
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+
+    © 2026 Педагогический блог
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

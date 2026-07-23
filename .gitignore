@@ -1,0 +1,26 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask
+instance/
+.webassets-cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+
+# Переменные окружения
+.env

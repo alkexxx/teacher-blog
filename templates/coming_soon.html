@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Раздел в разработке{% endblock %}
+
+{% block content %}
+
+<div class="coming-soon">
+
+    <h1>🚧 Раздел находится в разработке</h1>
+
+    <p class="subtitle">
+        Здесь совсем скоро появятся учебные материалы.
+    </p>
+
+    <img src="{{ url_for('static', filename='images/meme.png') }}"
+         alt="Мем"
+         class="meme">
+
+
+
+    <p class="text">
+        К началу нового учебного года будут опубликованы:
+    </p>
+
+    <ul class="list">
+    <li>📚 Конспекты уроков</li>
+    <li>🖥️ Презентации</li>
+    <li>📝 Самостоятельные работы</li>
+    <li>📋 Контрольные работы</li>
+    <li>📂 Дополнительные материалы</li>
+</ul>
+
+<br>
+
+<a href="/" class="back-btn">
+    ← Вернуться на главную
+</a>
+
+</div>
+
+{% endblock %}
